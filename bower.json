@@ -1,0 +1,8 @@
+{
+  "name": "GO Sport",
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "jquery": "~3.1.1",
+    "datatables-bootstrap3-plugin": "^0.5.0"
+  }
+}

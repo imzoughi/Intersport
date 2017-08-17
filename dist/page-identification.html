@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html lang="fr" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="fr">
+<!--<![endif]-->
+<head>
+    <head>
+        <meta charset="utf-8">
+        <title>Title project</title>
+        <meta name="description" content="Description project"/>
+        <meta name="keywords" content="Keywords project"/>
+        <link rel="canonical" href="/"/>
+        <meta name="author" content="Project name"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="content-language" content="fr"/>
+
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Favicon -->
+        <!--<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">-->
+        <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
+        <!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
+        <!--<link rel="manifest" href="/manifest.json">-->
+        <!--<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d181c">-->
+        <!--<meta name="theme-color" content="#ffffff">-->
+
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- site CSS file -->
+        <link rel="stylesheet" href="stylesheets/main.css">
+    </head>
+</head>
+<body class="body">
+
+<!--.header-->
+<header class="header">
+    <!--.navbar-->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <h1 class="header-title">Connexion</h1>
+                <ul class="nav navbar-nav navbar-right not-visible hidden-xs">
+                    <li><a href="#"><i class="fa fa-power-off" aria-hidden="true"></i> Se deconnecter</a></li>
+                    <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!--.navbar-->
+</header>
+<!--/.header-->
+
+<!--.main-->
+<main class="main">
+
+    <!--.head-page-title-->
+    <div class="head-page-title visible-sm visible-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="header-title">Connexion</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--.head-page-title-->
+
+    <!--.section-content-->
+    <div class="section-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <h1 class="head-1 text-center">
+                        Bienvenue sur EASY Fid<br> Votre espace de Gestion Fidélité
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                    <form class="form-connexion" data-toggle="validator">
+                        <fieldset>
+
+                            <!-- Text input-->
+                            <div class="form-group clearfix has-feedback">
+                                <label class="col-md-12 col-sm-12 col-xs-12" for="user-identifiant_id">Identifiant
+                                    <sup class="required-star">*</sup><a href="#" class="info-bull-link" data-toggle="popover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?">?</a></label>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <input id="user-identifiant_id" name="user-identifiant_id" type="text" placeholder="" class="form-control input-md" data-error="Veillez saisir votre identifiant" required>
+                                    <span class="fa form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <!-- Password input-->
+                            <div class="form-group clearfix has-feedback">
+                                <label class="col-md-12 col-sm-12 col-xs-12" for="user-password_id">Mot de passe
+                                    <sup class="required-star">*</sup>
+                                    <a href="#" class="show-hide-password">Visualiser le mot de passe</a></label>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <input id="user-password_id" name="user-password_id" type="password" placeholder="" class="form-control input-md" data-error="Veillez saisir votre mot de passe" required>
+                                    <span class="fa form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="form-group clearfix text-center">
+                                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Connexion</button>
+                            </div>
+
+                            <div class="note">
+                                Si vous avez oublié vos identifiants de connexion,<br> merci de vous rapprocher de la hotline 
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./section-content-->
+</main>
+<!--/.main-->
+
+<script type="text/javascript" src="javascript/vendors.js"></script>
+<script type="text/javascript" src="javascript/main.js"></script>
+
+</body>
+</html>

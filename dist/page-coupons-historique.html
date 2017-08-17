@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html lang="fr" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="fr">
+<!--<![endif]-->
+<head>
+    <head>
+        <meta charset="utf-8">
+        <title>Title project</title>
+        <meta name="description" content="Description project"/>
+        <meta name="keywords" content="Keywords project"/>
+        <link rel="canonical" href="/"/>
+        <meta name="author" content="Project name"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="content-language" content="fr"/>
+
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Favicon -->
+        <!--<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">-->
+        <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
+        <!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
+        <!--<link rel="manifest" href="/manifest.json">-->
+        <!--<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d181c">-->
+        <!--<meta name="theme-color" content="#ffffff">-->
+
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- site CSS file -->
+        <link rel="stylesheet" href="stylesheets/main.css">
+    </head>
+</head>
+<body class="body">
+
+<!--.header-->
+<header class="header">
+    <!--.navbar-->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <h1 class="header-title hidden-sm hidden-xs">Historique des coupons</h1>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="is-off" aria-hidden="true"></i> Se deconnecter</a></li>
+                    <li><a href="#"><i class="is-home" aria-hidden="true"></i> Accueil</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!--.navbar-->
+</header>
+<!--/.header-->
+
+<!--.main-->
+<main class="main">
+
+    <!--.head-page-title-->
+    <div class="head-page-title visible-sm visible-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="header-title">Historique des coupons</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--.head-page-title-->
+
+    <!--.head-page-->
+    <div class="head-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="head-page--title">
+                        Gérard DURAND
+                    </h2>
+                    <ul class="head-page--details">
+                        <li>Carte: <strong>Carte N° 0000 0000 5487 3321</strong></li>
+                        <li>Solde de points : <strong>292</strong></li>
+                        <li>Carte : <strong class="text-success">VALIDE</strong></li>
+                    </ul>
+                    <p>Magasin de rattachement : <strong>PONTAULT COMBAULT</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--.head-page-->
+
+    <!--.section-nav-tabs-->
+    <div class="section-nav-tabs">
+        <div class="container">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+                <li role="presentation">
+                    <a href="page-modification-infos-carte.html">Données personnelles</a>
+                </li>
+                <li role="presentation">
+                    <a href="page-saisie-ticket.html">Saisir un ticket</a>
+                </li>
+                <li role="presentation" class="active">
+                    <a href="page-coupons-historique.html">Coupons</a>
+                </li>
+                <li role="presentation">
+                    <a href="remplacement-carte.html">Remplacement Carte</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--./section-nav-tabs-->
+
+    <!--.section-content-->
+    <div class="section-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <table width="100%" data-table="data-table" class="table table-striped table-bordered table-custom table-hover">
+                        <thead>
+                        <tr>
+                            <th>Validité du coupon</th>
+                            <th>Valable Jusqu’au</th>
+                            <th>Numéro du coupon</th>
+                            <th>Remise</th>
+                            <th>Impression</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><span class="bull not-active"></span></td>
+                            <td>23/06/2019</td>
+                            <td>1605 0900 0003 004</td>
+                            <td>25%</td>
+                            <td><a href="#"  data-toggle="modal" data-target="#modal-coupon">Imprimer Coupon</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="bull active"></span></td>
+                            <td>23/06/2019</td>
+                            <td>1605 0900 0003 004</td>
+                            <td>25%</td>
+                            <td><a href="#"  data-toggle="modal" data-target="#modal-coupon">Imprimer Coupon</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="bull active"></span></td>
+                            <td>23/06/2019</td>
+                            <td>1605 0900 0003 004</td>
+                            <td>25%</td>
+                            <td><a href="#"  data-toggle="modal" data-target="#modal-coupon">Imprimer Coupon</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./section-content-->
+
+</main>
+<!--/.main-->
+
+<div class="modal modale-ticket fade" id="modal-coupon" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="text-ticket text-center">
+                            <p><strong>GÉRARD DURAND</strong><br>
+                            Carte N° 0000 0000 5487 3321</p>
+
+                            <p><strong>BON DE REMISE 10%</strong><br>
+                            Valable jusqu’au : 31/10/2017</p>
+
+                            <p><img src="images/code-barre.png" alt=""></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="modal-validation text-center">
+                            <button type="button" class="btn btn-primary">Imprimer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+
+        <button class="btn btn-default btn-close" data-dismiss="modal">Fermer</button>
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script type="text/javascript" src="javascript/vendors.js"></script>
+<script type="text/javascript" src="javascript/main.js"></script>
+
+</body>
+</html>

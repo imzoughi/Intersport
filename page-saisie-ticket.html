@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html lang="fr" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="fr">
+<!--<![endif]-->
+<head>
+    <!--(bake /includes/global/head.html)-->
+</head>
+<body class="body">
+
+<!--(bake /includes/global/header.html title="Saisie Ticket")-->
+
+<!--.main-->
+<main class="main">
+
+    <!--(bake /includes/global/header-page-title.html title="Saisie Ticket")-->
+
+    <!--.head-page-->
+    <div class="head-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="head-page--title">
+                        Gérard DURAND
+                    </h2>
+                    <ul class="head-page--details">
+                        <li>Carte: <strong>Carte N° 0000 0000 5487 3321</strong></li>
+                        <li>Solde de points : <strong>292</strong></li>
+                        <li>Carte : <strong class="text-success">VALIDE</strong></li>
+                    </ul>
+                    <p>Magasin de rattachement : <strong>PONTAULT COMBAULT</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--.head-page-->
+
+    <!--.section-nav-tabs-->
+    <div class="section-nav-tabs">
+        <div class="container">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+                <li role="presentation">
+                    <a href="page-modification-infos-carte.html">Données personnelles</a>
+                </li>
+                <li role="presentation" class="active">
+                    <a href="page-saisie-ticket.html">Saisir un ticket</a>
+                </li>
+                <li role="presentation">
+                    <a href="page-coupons-historique.html">Coupons</a>
+                <li role="presentation">
+                    <a href="remplacement-carte.html">Remplacement Carte</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--./section-nav-tabs-->
+
+    <!--.section-content-->
+    <div class="section-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                    <!--.formulaire-->
+                    <form class="formulaire" data-toggle="validator">
+
+                        <!--.fieldset-content-->
+                        <fieldset class="fieldset-content">
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <!-- Text input-->
+                                    <div class="form-group clearfix has-feedback">
+                                        <label for="user-net-amount_id">Montant net payé
+                                            <sup class="required-star">*</sup></label>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <input id="user-net-amount_id" name="user-net-amount_id" type="number" placeholder="Saisir un montant" value="538" class="form-control input-md" data-error="Saisir un montant" required>
+                                                <span class="fa form-control-feedback" aria-hidden="true"></span>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <!-- Text input-->
+                                    <div class="form-group clearfix has-feedback">
+                                        <label for="user-amount-service_id">Dont montant service</label>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <input id="user-amount-service_id" name="user-amount-service_id" type="number" placeholder="Saisir un montant" value="" class="form-control input-md" data-error="Saisir un montant">
+                                                <span class="fa form-control-feedback" aria-hidden="true"></span>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <!-- Text input-->
+                                    <div class="form-group clearfix has-feedback">
+                                        <label for="user-rental-amount_id">Dont Montant location</label>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <input id="user-rental-amount_id" name="user-rental-amount_id" type="number" placeholder="Saisir un montant" value="" class="form-control input-md" data-error="Saisir un montant">
+                                                <span class="fa form-control-feedback" aria-hidden="true"></span>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                        <!--/.fieldset-content-->
+
+                        <!--.fieldset-content-->
+                        <fieldset class="fieldset-content">
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <!-- Text input-->
+                                    <div class="form-group clearfix has-feedback">
+                                        <label for="user-good-loyalty_id">Bon fidélité</label>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <input id="user-good-loyalty_id" name="user-good-loyalty_id" type="text" placeholder="Saisir donnée" value="" class="form-control input-md" data-error="Saisir votre bon fidélité">
+                                                <span class="fa form-control-feedback" aria-hidden="true"></span>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                        <!--/.fieldset-content-->
+
+                        <!--.fieldset-content-->
+                        <fieldset class="fieldset-content">
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <!-- Text input-->
+                                    <div class="form-group clearfix has-feedback">
+                                        <label for="user-good-loyalty-code_id">code-barres Fid (999)</label>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <input id="user-good-loyalty-code_id" name="user-good-loyalty-code_id" type="text" placeholder="Saisir donnée" value="" class="form-control input-md" data-error="Saisir votre le code à barre du bon fidélité">
+                                                <span class="fa form-control-feedback" aria-hidden="true"></span>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                        <!--/.fieldset-content-->
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <!-- Text input-->
+                                <div class="form-group clearfix text-center">
+                                    <button id="singlebutton" type="button" name="singlebutton" class="btn btn-primary" data-toggle="modal" data-target="#modal-saisie-ticket">Valider</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                    <!--/.formulaire-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./section-content-->
+
+</main>
+<!--/.main-->
+
+<!--(bake /includes/components/modal-saisie-ticket.html)-->
+<!--(bake /includes/global/load-js.html)-->
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html lang="fr" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="fr">
+<!--<![endif]-->
+<head>
+    <!--(bake /includes/global/head.html)-->
+</head>
+<body class="body">
+
+<!--(bake /includes/global/header-signin.html title="Connexion")-->
+
+<!--.main-->
+<main class="main">
+
+    <!--(bake /includes/global/header-page-title.html title="Connexion")-->
+
+    <!--.section-content-->
+    <div class="section-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <h1 class="head-1 text-center">
+                        Bienvenue sur EASY Fid<br> Votre espace de Gestion Fidélité
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                    <form class="form-connexion" data-toggle="validator">
+                        <fieldset>
+
+                            <!-- Text input-->
+                            <div class="form-group clearfix has-feedback">
+                                <label class="col-md-12 col-sm-12 col-xs-12" for="user-identifiant_id">Identifiant
+                                    <sup class="required-star">*</sup><a href="#" class="info-bull-link" data-toggle="popover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?">?</a></label>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <input id="user-identifiant_id" name="user-identifiant_id" type="text" placeholder="" class="form-control input-md" data-error="Veillez saisir votre identifiant" required>
+                                    <span class="fa form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <!-- Password input-->
+                            <div class="form-group clearfix has-feedback">
+                                <label class="col-md-12 col-sm-12 col-xs-12" for="user-password_id">Mot de passe
+                                    <sup class="required-star">*</sup>
+                                    <a href="#" class="show-hide-password">Visualiser le mot de passe</a></label>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <input id="user-password_id" name="user-password_id" type="password" placeholder="" class="form-control input-md" data-error="Veillez saisir votre mot de passe" required>
+                                    <span class="fa form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="form-group clearfix text-center">
+                                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Connexion</button>
+                            </div>
+
+                            <div class="note">
+                                Si vous avez oublié vos identifiants de connexion,<br> merci de vous rapprocher de la hotline 
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./section-content-->
+</main>
+<!--/.main-->
+
+<!--(bake /includes/global/load-js.html)-->
+
+</body>
+</html>
