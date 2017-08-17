@@ -75,14 +75,14 @@ var passwordShowToggle = function () {
 
             $(this).toggleClass('visible');
 
-            console.log(0);
+            // console.log(0);
 
             if ($(this).hasClass('visible')) {
                 pwInput.attr('type', 'text');
-                console.log(1);
+                // console.log(1);
             } else {
                 pwInput.attr('type', 'password');
-                console.log(2);
+                // console.log(2);
             }
 
         });

@@ -34,8 +34,7 @@ var bootstrapComponents = function() {
     function _init() {
         var btnToggle = $(".show-hide-password"), pwInput = $("#user-password_id");
         $(btnToggle).bind("click", function(e) {
-            e.preventDefault(), $(this).toggleClass("visible"), console.log(0), $(this).hasClass("visible") ? (pwInput.attr("type", "text"), 
-            console.log(1)) : (pwInput.attr("type", "password"), console.log(2));
+            e.preventDefault(), $(this).toggleClass("visible"), $(this).hasClass("visible") ? pwInput.attr("type", "text") : pwInput.attr("type", "password");
         });
     }
     return {
