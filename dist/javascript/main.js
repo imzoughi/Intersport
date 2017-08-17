@@ -23,7 +23,8 @@ var bootstrapComponents = function() {
                 success: "is-check",
                 error: "is-close"
             },
-            focus: !1
+            focus: !1,
+            disable: !1
         });
     }
     return {

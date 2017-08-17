@@ -54,6 +54,7 @@ var formValidator = function () {
                 error: 'is-close'
             },
             focus: false,
+            disable: false
         });
     }
 
