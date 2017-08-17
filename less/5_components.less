@@ -1,7 +1,9 @@
 
 .info-bull-link {
   display          : inline-block;
+  vertical-align: middle;
   background-color : @gray-light;
+  border           : 0;
   .border-radius(50%);
   font-family      : @font-family-secondary;
   font-size        : @font-size-base;
@@ -11,8 +13,22 @@
   text-align       : center;
   height           : 16px;
   width            : 16px;
+  margin-left      : 10px;
   text-decoration  : none;
   outline          : none;
+  position         : relative;
+  cursor           : -moz-help;
+  cursor           : -webkit-help;
+  cursor           : help;
+
+  &:after {
+    content   : "?";
+    font-size : 16px;
+    position  : absolute;
+    left      : 50%;
+    top       : 10px;
+    .translate(-50%, -50%);
+    }
 
   &:hover,
   &:focus {
