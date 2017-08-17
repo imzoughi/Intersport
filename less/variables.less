@@ -200,14 +200,14 @@
 //##
 
 //** `<input>` background color
-@input-bg : #EEE;
+@input-bg : #f2f2f2;
 //** `<input disabled>` background color
 @input-bg-disabled : @gray-lighter;
 
 //** Text color for `<input>`s
 @input-color : @black;
 //** `<input>` border color
-@input-border : #EEE;
+@input-border : #f2f2f2;
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -219,7 +219,10 @@
 @input-border-radius-small : @border-radius-small;
 
 //** Border color for inputs on focus
-@input-border-focus : rgba(140, 140, 140, 1);
+@input-border-focus : @gray-light;
+
+//** Border color for inputs on focus
+@input-background-focus : @white;
 
 //** Placeholder text color
 @input-color-placeholder : #0A0A0A;

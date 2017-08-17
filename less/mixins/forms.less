@@ -52,9 +52,10 @@
 //
 // Example usage: change the default blue border and shadow to white for better
 // contrast against a dark gray background.
-.form-control-focus(@color: @input-border-focus) {
+.form-control-focus(@background-color: @input-background-focus; @color: @input-border-focus) {
   @color-rgba: rgba(red(@color), green(@color), blue(@color), .6);
   &:focus {
+    background-color: @background-color ;
     border-color: @color;
     outline: 0;
     .box-shadow(none);
