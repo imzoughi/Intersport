@@ -3332,7 +3332,7 @@ input[type="search"] {
 }
 /* line 213, bower_components\bootstrap\less\forms.less */
 .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 /* line 222, bower_components\bootstrap\less\forms.less */
 .radio,
@@ -9082,7 +9082,7 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -9147,7 +9147,7 @@ output {
   width: 100%;
   height: 46px;
   padding: 10px 30px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.46666667;
   color: #000000;
   background-color: #f2f2f2;
@@ -9259,7 +9259,7 @@ input[type="search"] {
 }
 /* line 216, less\forms.less */
 .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 /* line 224, less\forms.less */
 .radio,
@@ -9870,7 +9870,7 @@ select[multiple].input-lg {
 }
 /* line 669, less\forms.less */
 .fieldset-content {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 /* line 673, less\forms.less */
 .checkbox {
@@ -10018,7 +10018,7 @@ select[multiple].input-lg {
   display: block;
   position: absolute;
   left: 0;
-  top: 8px;
+  top: 0px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   background-repeat: no-repeat;
@@ -10027,7 +10027,7 @@ select[multiple].input-lg {
 }
 /* line 827, less\forms.less */
 .radio.radio-inline {
-  line-height: 32px;
+  line-height: 1;
   padding-left: 24px;
   color: inherit !important;
 }
@@ -13608,15 +13608,19 @@ select.selectpicker {
   border-bottom: 0 none;
 }
 /* line 186, less\bootstrap-select.less */
+.bootstrap-select.btn-group.open {
+  z-index: 3;
+}
+/* line 189, less\bootstrap-select.less */
 .bootstrap-select.btn-group.open > .dropdown-toggle.btn-default:focus {
   background-color: #FFFFFF;
   border-color: #F2F2F2;
 }
-/* line 191, less\bootstrap-select.less */
+/* line 195, less\bootstrap-select.less */
 .bootstrap-select.btn-group[class*="col-"] .dropdown-toggle {
   width: 100%;
 }
-/* line 196, less\bootstrap-select.less */
+/* line 200, less\bootstrap-select.less */
 .bootstrap-select.btn-group .dropdown-menu {
   font-size: 15px;
   min-width: 100%;
@@ -13632,7 +13636,7 @@ select.selectpicker {
   top: 50%;
   padding-top: 25px;
 }
-/* line 208, less\bootstrap-select.less */
+/* line 212, less\bootstrap-select.less */
 .bootstrap-select.btn-group .dropdown-menu.inner {
   position: static;
   float: none;
@@ -13644,46 +13648,46 @@ select.selectpicker {
   border-radius: 0;
   max-height: 200px !important;
 }
-/* line 219, less\bootstrap-select.less */
+/* line 223, less\bootstrap-select.less */
 .bootstrap-select.btn-group .dropdown-menu li {
   position: relative;
 }
-/* line 222, less\bootstrap-select.less */
+/* line 226, less\bootstrap-select.less */
 .bootstrap-select.btn-group .dropdown-menu li.active small {
   color: #FFF;
 }
-/* line 226, less\bootstrap-select.less */
+/* line 230, less\bootstrap-select.less */
 .bootstrap-select.btn-group .dropdown-menu li.disabled a {
   cursor: not-allowed;
 }
-/* line 230, less\bootstrap-select.less */
+/* line 234, less\bootstrap-select.less */
 .bootstrap-select.btn-group .dropdown-menu li a {
   cursor: pointer;
   user-select: none;
   outline: none;
 }
-/* line 235, less\bootstrap-select.less */
+/* line 239, less\bootstrap-select.less */
 .bootstrap-select.btn-group .dropdown-menu li a.opt {
   position: relative;
   padding-left: 2.25em;
 }
-/* line 240, less\bootstrap-select.less */
+/* line 244, less\bootstrap-select.less */
 .bootstrap-select.btn-group .dropdown-menu li a span.check-mark {
   display: none;
 }
-/* line 244, less\bootstrap-select.less */
+/* line 248, less\bootstrap-select.less */
 .bootstrap-select.btn-group .dropdown-menu li a span.text {
   display: inline-block;
 }
-/* line 249, less\bootstrap-select.less */
+/* line 253, less\bootstrap-select.less */
 .bootstrap-select.btn-group .dropdown-menu li a:hover span.text {
   color: #164194;
 }
-/* line 255, less\bootstrap-select.less */
+/* line 259, less\bootstrap-select.less */
 .bootstrap-select.btn-group .dropdown-menu li small {
   padding-left: 0.5em;
 }
-/* line 260, less\bootstrap-select.less */
+/* line 264, less\bootstrap-select.less */
 .bootstrap-select.btn-group .dropdown-menu .notify {
   position: absolute;
   bottom: 5px;
@@ -13698,7 +13702,7 @@ select.selectpicker {
   opacity: 0.9;
   box-sizing: border-box;
 }
-/* line 276, less\bootstrap-select.less */
+/* line 280, less\bootstrap-select.less */
 .bootstrap-select.btn-group.dropup .dropdown-menu {
   top: inherit;
   -webkit-border-radius: 20px 20px 0 0;
@@ -13709,39 +13713,39 @@ select.selectpicker {
   margin-bottom: -25px;
   padding-bottom: 25px;
 }
-/* line 285, less\bootstrap-select.less */
+/* line 289, less\bootstrap-select.less */
 .bootstrap-select.btn-group .no-results {
   padding: 3px;
   background: #F5F5F5;
   margin: 0 5px;
   white-space: nowrap;
 }
-/* line 293, less\bootstrap-select.less */
+/* line 297, less\bootstrap-select.less */
 .bootstrap-select.btn-group.fit-width .dropdown-toggle .filter-option {
   position: static;
 }
-/* line 297, less\bootstrap-select.less */
+/* line 301, less\bootstrap-select.less */
 .bootstrap-select.btn-group.fit-width .dropdown-toggle .caret {
   position: static;
   top: auto;
   margin-top: -1px;
 }
-/* line 305, less\bootstrap-select.less */
+/* line 309, less\bootstrap-select.less */
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
   position: absolute;
   display: inline-block;
   right: 15px;
   margin-top: 5px;
 }
-/* line 312, less\bootstrap-select.less */
+/* line 316, less\bootstrap-select.less */
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text {
   margin-right: 34px;
 }
-/* line 319, less\bootstrap-select.less */
+/* line 323, less\bootstrap-select.less */
 .bootstrap-select.show-menu-arrow.open > .dropdown-toggle {
   z-index: 1061;
 }
-/* line 324, less\bootstrap-select.less */
+/* line 328, less\bootstrap-select.less */
 .bootstrap-select.show-menu-arrow .dropdown-toggle:before {
   content: '';
   border-left: 7px solid transparent;
@@ -13752,7 +13756,7 @@ select.selectpicker {
   left: 9px;
   display: none;
 }
-/* line 335, less\bootstrap-select.less */
+/* line 339, less\bootstrap-select.less */
 .bootstrap-select.show-menu-arrow .dropdown-toggle:after {
   content: '';
   border-left: 6px solid transparent;
@@ -13763,73 +13767,73 @@ select.selectpicker {
   left: 10px;
   display: none;
 }
-/* line 348, less\bootstrap-select.less */
+/* line 352, less\bootstrap-select.less */
 .bootstrap-select.show-menu-arrow.dropup .dropdown-toggle:before {
   bottom: auto;
   top: -3px;
   border-top: 7px solid rgba(204, 204, 204, 0.2);
   border-bottom: 0;
 }
-/* line 355, less\bootstrap-select.less */
+/* line 359, less\bootstrap-select.less */
 .bootstrap-select.show-menu-arrow.dropup .dropdown-toggle:after {
   bottom: auto;
   top: -3px;
   border-top: 6px solid white;
   border-bottom: 0;
 }
-/* line 364, less\bootstrap-select.less */
+/* line 368, less\bootstrap-select.less */
 .bootstrap-select.show-menu-arrow.pull-right .dropdown-toggle:before {
   right: 12px;
   left: auto;
 }
-/* line 369, less\bootstrap-select.less */
+/* line 373, less\bootstrap-select.less */
 .bootstrap-select.show-menu-arrow.pull-right .dropdown-toggle:after {
   right: 13px;
   left: auto;
 }
-/* line 376, less\bootstrap-select.less */
+/* line 380, less\bootstrap-select.less */
 .bootstrap-select.show-menu-arrow.open > .dropdown-toggle:before,
 .bootstrap-select.show-menu-arrow.open > .dropdown-toggle:after {
   display: block;
-}
-/* line 383, less\bootstrap-select.less */
-.has-success .bootstrap-select > .dropdown-toggle {
-  border-color: #8DC63F;
 }
 /* line 387, less\bootstrap-select.less */
 .has-success .bootstrap-select > .dropdown-toggle {
   border-color: #8DC63F;
 }
 /* line 391, less\bootstrap-select.less */
+.has-success .bootstrap-select > .dropdown-toggle {
+  border-color: #8DC63F;
+}
+/* line 395, less\bootstrap-select.less */
 .bs-searchbox,
 .bs-actionsbox,
 .bs-donebutton {
   padding: 4px 8px;
 }
-/* line 397, less\bootstrap-select.less */
+/* line 401, less\bootstrap-select.less */
 .bs-actionsbox {
   width: 100%;
   box-sizing: border-box;
 }
-/* line 401, less\bootstrap-select.less */
+/* line 405, less\bootstrap-select.less */
 .bs-actionsbox .btn-group button {
   width: 50%;
 }
-/* line 406, less\bootstrap-select.less */
+/* line 410, less\bootstrap-select.less */
 .bs-donebutton {
   float: left;
   width: 100%;
   box-sizing: border-box;
 }
-/* line 411, less\bootstrap-select.less */
+/* line 415, less\bootstrap-select.less */
 .bs-donebutton .btn-group button {
   width: 100%;
 }
-/* line 417, less\bootstrap-select.less */
+/* line 421, less\bootstrap-select.less */
 .bs-searchbox + .bs-actionsbox {
   padding: 0 8px 4px;
 }
-/* line 421, less\bootstrap-select.less */
+/* line 425, less\bootstrap-select.less */
 .bs-searchbox .form-control {
   margin-bottom: 0;
   width: 100%;
@@ -14541,26 +14545,27 @@ h6,
 /* line 85, less\1_type.less */
 .legend {
   color: #164194;
+  font-size: 26px;
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 16px;
 }
 @media (max-width: 480px) {
-  /* line 92, less\1_type.less */
+  /* line 93, less\1_type.less */
   .legend {
     font-size: 20px;
   }
 }
-/* line 96, less\1_type.less */
+/* line 97, less\1_type.less */
 .legend strong {
   font-weight: 500;
 }
-/* line 105, less\1_type.less */
+/* line 106, less\1_type.less */
 p {
   margin: 0 0 11.5px;
 }
-/* line 109, less\1_type.less */
+/* line 110, less\1_type.less */
 .lead {
   margin-bottom: 23px;
   font-size: 18px;
@@ -14568,59 +14573,59 @@ p {
   line-height: 1.4;
 }
 @media (min-width: 768px) {
-  /* line 115, less\1_type.less */
+  /* line 116, less\1_type.less */
   .lead {
     font-size: 24px;
   }
 }
-/* line 124, less\1_type.less */
+/* line 125, less\1_type.less */
 small,
 .small {
   font-size: 87%;
 }
-/* line 129, less\1_type.less */
+/* line 130, less\1_type.less */
 mark,
 .mark {
   background-color: #FFF;
   padding: .2em;
 }
-/* line 136, less\1_type.less */
+/* line 137, less\1_type.less */
 .text-left {
   text-align: left;
 }
-/* line 138, less\1_type.less */
+/* line 139, less\1_type.less */
 .text-right {
   text-align: right;
 }
-/* line 140, less\1_type.less */
+/* line 141, less\1_type.less */
 .text-center {
   text-align: center;
 }
-/* line 142, less\1_type.less */
+/* line 143, less\1_type.less */
 .text-justify {
   text-align: justify;
 }
-/* line 144, less\1_type.less */
+/* line 145, less\1_type.less */
 .text-nowrap {
   white-space: nowrap;
 }
-/* line 147, less\1_type.less */
+/* line 148, less\1_type.less */
 .text-lowercase {
   text-transform: lowercase;
 }
-/* line 149, less\1_type.less */
+/* line 150, less\1_type.less */
 .text-uppercase {
   text-transform: uppercase;
 }
-/* line 151, less\1_type.less */
+/* line 152, less\1_type.less */
 .text-capitalize {
   text-transform: capitalize;
 }
-/* line 154, less\1_type.less */
+/* line 155, less\1_type.less */
 .text-muted {
   color: #F2F2F2;
 }
-/* line 158, less\1_type.less */
+/* line 159, less\1_type.less */
 .text-primary {
   color: #164194;
 }
@@ -14629,7 +14634,7 @@ a.text-primary:hover,
 a.text-primary:focus {
   color: #0f2d68;
 }
-/* line 162, less\1_type.less */
+/* line 163, less\1_type.less */
 .text-success {
   color: #8DC63F;
 }
@@ -14638,7 +14643,7 @@ a.text-success:hover,
 a.text-success:focus {
   color: #72a230;
 }
-/* line 166, less\1_type.less */
+/* line 167, less\1_type.less */
 .text-info {
   color: #036DED;
 }
@@ -14647,7 +14652,7 @@ a.text-info:hover,
 a.text-info:focus {
   color: #0256bb;
 }
-/* line 170, less\1_type.less */
+/* line 171, less\1_type.less */
 .text-warning {
   color: #EDC403;
 }
@@ -14656,7 +14661,7 @@ a.text-warning:hover,
 a.text-warning:focus {
   color: #bb9a02;
 }
-/* line 174, less\1_type.less */
+/* line 175, less\1_type.less */
 .text-danger {
   color: #E64747;
 }
@@ -14665,7 +14670,7 @@ a.text-danger:hover,
 a.text-danger:focus {
   color: #dc1e1e;
 }
-/* line 181, less\1_type.less */
+/* line 182, less\1_type.less */
 .bg-primary {
   color: #FFF;
   background-color: #164194;
@@ -14675,7 +14680,7 @@ a.bg-primary:hover,
 a.bg-primary:focus {
   background-color: #0f2d68;
 }
-/* line 188, less\1_type.less */
+/* line 189, less\1_type.less */
 .bg-success {
   background-color: #FFF;
 }
@@ -14684,7 +14689,7 @@ a.bg-success:hover,
 a.bg-success:focus {
   background-color: #e6e6e6;
 }
-/* line 192, less\1_type.less */
+/* line 193, less\1_type.less */
 .bg-info {
   background-color: #FFF;
 }
@@ -14693,7 +14698,7 @@ a.bg-info:hover,
 a.bg-info:focus {
   background-color: #e6e6e6;
 }
-/* line 196, less\1_type.less */
+/* line 197, less\1_type.less */
 .bg-warning {
   background-color: #FFF;
 }
@@ -14702,7 +14707,7 @@ a.bg-warning:hover,
 a.bg-warning:focus {
   background-color: #e6e6e6;
 }
-/* line 200, less\1_type.less */
+/* line 201, less\1_type.less */
 .bg-danger {
   background-color: #FFF;
 }
@@ -14711,62 +14716,62 @@ a.bg-danger:hover,
 a.bg-danger:focus {
   background-color: #e6e6e6;
 }
-/* line 207, less\1_type.less */
+/* line 208, less\1_type.less */
 .page-header {
   padding-bottom: 10.5px;
   margin: 46px 0 23px;
   border-bottom: 1px solid #F0F0F0;
 }
-/* line 217, less\1_type.less */
+/* line 218, less\1_type.less */
 ul,
 ol {
   margin-top: 0;
   margin-bottom: 11.5px;
 }
-/* line 221, less\1_type.less */
+/* line 222, less\1_type.less */
 ul ul,
 ol ul,
 ul ol,
 ol ol {
   margin-bottom: 0;
 }
-/* line 230, less\1_type.less */
+/* line 231, less\1_type.less */
 .list-unstyled {
   padding-left: 0;
   list-style: none;
 }
-/* line 236, less\1_type.less */
+/* line 237, less\1_type.less */
 .list-inline {
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
 }
-/* line 240, less\1_type.less */
+/* line 241, less\1_type.less */
 .list-inline > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 248, less\1_type.less */
+/* line 249, less\1_type.less */
 dl {
   margin-top: 0;
   margin-bottom: 23px;
 }
-/* line 253, less\1_type.less */
+/* line 254, less\1_type.less */
 dt,
 dd {
   line-height: 1.46666667;
 }
-/* line 258, less\1_type.less */
+/* line 259, less\1_type.less */
 dt {
   font-weight: bold;
 }
-/* line 262, less\1_type.less */
+/* line 263, less\1_type.less */
 dd {
   margin-left: 0;
 }
 @media (min-width: 992px) {
-  /* line 277, less\1_type.less */
+  /* line 278, less\1_type.less */
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -14776,36 +14781,36 @@ dd {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  /* line 285, less\1_type.less */
+  /* line 286, less\1_type.less */
   .dl-horizontal dd {
     margin-left: 180px;
   }
 }
-/* line 295, less\1_type.less */
+/* line 296, less\1_type.less */
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #F2F2F2;
 }
-/* line 302, less\1_type.less */
+/* line 303, less\1_type.less */
 .initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
-/* line 308, less\1_type.less */
+/* line 309, less\1_type.less */
 blockquote {
   padding: 11.5px 23px;
   margin: 0 0 23px;
   font-size: 20px;
   border-left: 5px solid #F0F0F0;
 }
-/* line 317, less\1_type.less */
+/* line 318, less\1_type.less */
 blockquote p:last-child,
 blockquote ul:last-child,
 blockquote ol:last-child {
   margin-bottom: 0;
 }
-/* line 324, less\1_type.less */
+/* line 325, less\1_type.less */
 blockquote footer,
 blockquote small,
 blockquote .small {
@@ -14814,13 +14819,13 @@ blockquote .small {
   line-height: 1.46666667;
   color: #F2F2F2;
 }
-/* line 332, less\1_type.less */
+/* line 333, less\1_type.less */
 blockquote footer:before,
 blockquote small:before,
 blockquote .small:before {
   content: '\2014 \00A0';
 }
-/* line 341, less\1_type.less */
+/* line 342, less\1_type.less */
 .blockquote-reverse,
 blockquote.pull-right {
   padding-right: 15px;
@@ -14829,7 +14834,7 @@ blockquote.pull-right {
   border-left: 0;
   text-align: right;
 }
-/* line 353, less\1_type.less */
+/* line 354, less\1_type.less */
 .blockquote-reverse footer:before,
 blockquote.pull-right footer:before,
 .blockquote-reverse small:before,
@@ -14838,7 +14843,7 @@ blockquote.pull-right small:before,
 blockquote.pull-right .small:before {
   content: '';
 }
-/* line 354, less\1_type.less */
+/* line 355, less\1_type.less */
 .blockquote-reverse footer:after,
 blockquote.pull-right footer:after,
 .blockquote-reverse small:after,
@@ -14847,7 +14852,7 @@ blockquote.pull-right small:after,
 blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
-/* line 361, less\1_type.less */
+/* line 362, less\1_type.less */
 address {
   margin-bottom: 23px;
   font-style: normal;
@@ -14867,7 +14872,7 @@ address {
 }
 /* line 1, less\3_sections.less */
 .section-content {
-  padding: 50px 0;
+  padding: 40px 0;
 }
 /* line 2, less\5_components.less */
 .info-bull-link {

@@ -144,10 +144,10 @@
                                             </div>
                                             <div class="col-md-8 col-sm-8 col-xs-8">
                                                 <label class="radio radio-inline">
-                                                    <input type="radio" name="user-civility" id="user-civility-1" value="Madame" checked> Madame
+                                                    <input type="radio" name="user-civility" id="user-civility-1" value="Madame" required checked> Madame
                                                     <span class="radio-indicator"></span> </label>
                                                 <label class="radio radio-inline">
-                                                    <input type="radio" name="user-civility" id="user-civility-3" value="Monsieur"> Monsieur
+                                                    <input type="radio" name="user-civility" id="user-civility-3" value="Monsieur" required> Monsieur
                                                     <span class="radio-indicator"></span> </label>
                                                 <div class="help-block with-errors"></div>
                                             </div>
@@ -698,39 +698,41 @@
                                 <div class="col-md-5 col-sm-6 col-xs-12">
                                     <!-- Text input-->
                                     <div class="form-group clearfix has-feedback">
-                                        <label for="user-way_id">Voie</label>
+                                        <label for="user-way-number_id">Voie et Numéro </label>
                                         <div class="row">
                                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <input id="user-way_id" name="user-way_id" type="text" placeholder="" value="Rue Etienne Marcel" class="form-control input-md" data-error="Saisir votre voie">
+                                                <input id="user-way-number_id" name="user-way-number_id" type="text" placeholder="Saisir donnée" class="form-control input-md" data-error="Saisir la voie et le numéro">
                                                 <span class="fa form-control-feedback" aria-hidden="true"></span>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
-                                    <!-- Text input-->
-                                    <div class="form-group clearfix has-feedback">
-                                        <label for="user-way-number_id">Numéro de voie</label>
-                                        <div class="row">
-                                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <input id="user-way-number_id" name="user-way-number_id" type="text" placeholder="" value="867" class="form-control input-md" data-error="Saisir votre numéro de voie">
-                                                <span class="fa form-control-feedback" aria-hidden="true"></span>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-md-5 col-sm-6 col-xs-12">
+                                <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
                                     <!-- Text input-->
                                     <div class="form-group clearfix has-feedback">
                                         <label for="user-location-says_id">Lieu dit</label>
                                         <div class="row">
                                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <input id="user-location-says_id" name="user-location-says_id" type="text" placeholder="" value="Residence Les Perles d’Automnes" class="form-control input-md" data-error="Saisir votre lieu dit">
+                                                <input id="user-location-says_id" name="user-location-says_id" type="text" placeholder="Saisir donnée" class="form-control input-md" data-error="Saisir votre lieu dit">
+                                                <span class="fa form-control-feedback" aria-hidden="true"></span>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-5 col-sm-6 col-xs-12">
+                                    <!-- Text input-->
+                                    <div class="form-group clearfix has-feedback">
+                                        <label for="user-Building_id">Bâtiment/résidence</label>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <input id="user-Building_id" name="user-Building_id" type="text" placeholder="Saisir donnée" class="form-control input-md" data-error="Saisir votre bâtiment/résidence">
                                                 <span class="fa form-control-feedback" aria-hidden="true"></span>
                                                 <div class="help-block with-errors"></div>
                                             </div>
@@ -740,26 +742,10 @@
                                 <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
                                     <!-- Text input-->
                                     <div class="form-group clearfix has-feedback">
-                                        <label for="user-Building_id">Bâtiment/résidence</label>
-                                        <div class="row">
-                                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <input id="user-Building_id" name="user-Building_id" type="text" placeholder="" value="A" class="form-control input-md" data-error="Saisir votre bâtiment/résidence">
-                                                <span class="fa form-control-feedback" aria-hidden="true"></span>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-5 col-sm-6 col-xs-12">
-                                    <!-- Text input-->
-                                    <div class="form-group clearfix has-feedback">
                                         <label for="user-apartment-says_id">étage/appartement</label>
                                         <div class="row">
                                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <input id="user-apartment-says_id" name="user-apartment-says_id" type="text" placeholder="" value="3" class="form-control input-md" data-error="Saisir votre étage/appartement">
+                                                <input id="user-apartment-says_id" name="user-apartment-says_id" type="text" placeholder="Saisir donnée" class="form-control input-md" data-error="Saisir votre étage/appartement">
                                                 <span class="fa form-control-feedback" aria-hidden="true"></span>
                                                 <div class="help-block with-errors"></div>
                                             </div>

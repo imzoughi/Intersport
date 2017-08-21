@@ -183,9 +183,13 @@ select.selectpicker {
       }
     }
 
-  &.open > .dropdown-toggle.btn-default:focus {
-    background-color : @input-background-focus;
-    border-color: @input-border-focus;
+  &.open {
+    z-index: 3;
+
+    > .dropdown-toggle.btn-default:focus {
+      background-color : @input-background-focus;
+      border-color     : @input-border-focus;
+      }
     }
 
   &[class*="col-"] .dropdown-toggle {
@@ -200,7 +204,7 @@ select.selectpicker {
     .border-radius(0 0 20px 20px);
     overflow     : hidden;
     box-sizing   : border-box;
-    .box-shadow( 0 6px 20px -10px rgba(0,0,0,0.3));
+    .box-shadow(0 6px 20px -10px rgba(0, 0, 0, 0.3));
     z-index      : 1;
     top          : 50%;
     padding-top  : 25px;
