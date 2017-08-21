@@ -3332,7 +3332,7 @@ input[type="search"] {
 }
 /* line 213, bower_components\bootstrap\less\forms.less */
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 /* line 222, bower_components\bootstrap\less\forms.less */
 .radio,
@@ -3898,7 +3898,7 @@ select[multiple].input-lg {
 .btn {
   display: inline-block;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
@@ -9259,7 +9259,7 @@ input[type="search"] {
 }
 /* line 216, less\forms.less */
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 /* line 224, less\forms.less */
 .radio,
@@ -10204,7 +10204,7 @@ select[multiple].input-lg {
   display: inline-block;
   margin-bottom: 0;
   font-family: 'Din', Tahoma, Helvetica, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
@@ -15117,8 +15117,9 @@ address {
   display: table;
   width: 100%;
   height: 100%;
+  margin: 0;
 }
-/* line 237, less\5_components.less */
+/* line 238, less\5_components.less */
 .head-page .container > .row > div[class*="col-"] {
   display: table-cell;
   vertical-align: middle;
@@ -15126,39 +15127,41 @@ address {
   padding-bottom: 70px;
 }
 @media (min-width: 1200px) {
-  /* line 245, less\5_components.less */
+  /* line 246, less\5_components.less */
   .head-page .container {
-    height: 360px;
+    height: 200px;
   }
 }
-/* line 250, less\5_components.less */
+/* line 251, less\5_components.less */
 .head-page--title {
   font-size: 22px;
   font-family: 'opensans', Arial, Verdana, Helvetica, sans-serif;
   font-weight: 500;
 }
-/* line 255, less\5_components.less */
+/* line 256, less\5_components.less */
 .head-page--details {
   padding-left: 0;
   list-style: none;
 }
-/* line 258, less\5_components.less */
-.head-page--details > li {
-  display: inline-block;
-  vertical-align: middle;
+@media (min-width: 768px) {
+  /* line 260, less\5_components.less */
+  .head-page--details > li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 263, less\5_components.less */
+  .head-page--details > li:after {
+    content: '-';
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 270, less\5_components.less */
+  .head-page--details > li:last-child:after {
+    content: '';
+  }
 }
-/* line 261, less\5_components.less */
-.head-page--details > li:after {
-  content: '-';
-  margin: 0 5px;
-  display: inline-block;
-  vertical-align: middle;
-}
-/* line 267, less\5_components.less */
-.head-page--details > li:last-child:after {
-  content: '';
-}
-/* line 274, less\5_components.less */
+/* line 278, less\5_components.less */
 .head-page-title {
   border-bottom: 1px solid #F2F2F2;
   text-align: center;
