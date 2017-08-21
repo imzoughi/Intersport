@@ -3332,7 +3332,7 @@ input[type="search"] {
 }
 /* line 213, bower_components\bootstrap\less\forms.less */
 .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 /* line 222, bower_components\bootstrap\less\forms.less */
 .radio,
@@ -9259,7 +9259,7 @@ input[type="search"] {
 }
 /* line 216, less\forms.less */
 .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 /* line 224, less\forms.less */
 .radio,
@@ -9870,7 +9870,7 @@ select[multiple].input-lg {
 }
 /* line 669, less\forms.less */
 .fieldset-content {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 /* line 673, less\forms.less */
 .checkbox {
