@@ -178,6 +178,13 @@ input[type="search"] {
   -webkit-appearance : none;
   }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+  -moz-appearance:textfield !important;
+  }
+
 // Special styles for iOS temporal inputs
 //
 // In Mobile Safari, setting `display: block` on temporal inputs causes the

@@ -5969,43 +5969,43 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 @media (min-width: 768px) {
-  /* line 529, less\forms.less */
+  /* line 536, less\forms.less */
   .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 536, less\forms.less */
+  /* line 543, less\forms.less */
   .navbar-form .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  /* line 543, less\forms.less */
+  /* line 550, less\forms.less */
   .navbar-form .form-control-static {
     display: inline-block;
   }
-  /* line 547, less\forms.less */
+  /* line 554, less\forms.less */
   .navbar-form .input-group {
     display: inline-table;
     vertical-align: middle;
   }
-  /* line 551, less\forms.less */
+  /* line 558, less\forms.less */
   .navbar-form .input-group .input-group-addon,
   .navbar-form .input-group .input-group-btn,
   .navbar-form .input-group .form-control {
     width: auto;
   }
-  /* line 559, less\forms.less */
+  /* line 566, less\forms.less */
   .navbar-form .input-group > .form-control {
     width: 100%;
   }
-  /* line 563, less\forms.less */
+  /* line 570, less\forms.less */
   .navbar-form .control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 570, less\forms.less */
+  /* line 577, less\forms.less */
   .navbar-form .radio,
   .navbar-form .checkbox {
     display: inline-block;
@@ -6013,18 +6013,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 577, less\forms.less */
+  /* line 584, less\forms.less */
   .navbar-form .radio label,
   .navbar-form .checkbox label {
     padding-left: 0;
   }
-  /* line 582, less\forms.less */
+  /* line 589, less\forms.less */
   .navbar-form .radio input[type="radio"],
   .navbar-form .checkbox input[type="checkbox"] {
     position: relative;
     margin-left: 0;
   }
-  /* line 589, less\forms.less */
+  /* line 596, less\forms.less */
   .navbar-form .has-feedback .form-control-feedback {
     top: 0;
   }
@@ -9226,15 +9226,22 @@ textarea.form-control {
 input[type="search"] {
   -webkit-appearance: none;
 }
+/* line 181, less\forms.less */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+  -moz-appearance: textfield !important;
+}
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 195, less\forms.less */
+  /* line 202, less\forms.less */
   input[type="date"].form-control,
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
     line-height: 45px;
   }
-  /* line 199, less\forms.less */
+  /* line 206, less\forms.less */
   input[type="date"].input-sm,
   input[type="time"].input-sm,
   input[type="datetime-local"].input-sm,
@@ -9245,7 +9252,7 @@ input[type="search"] {
   .input-group-sm input[type="month"] {
     line-height: 33px;
   }
-  /* line 204, less\forms.less */
+  /* line 211, less\forms.less */
   input[type="date"].input-lg,
   input[type="time"].input-lg,
   input[type="datetime-local"].input-lg,
@@ -9257,11 +9264,11 @@ input[type="search"] {
     line-height: 59px;
   }
 }
-/* line 216, less\forms.less */
+/* line 223, less\forms.less */
 .form-group {
   margin-bottom: 15px;
 }
-/* line 224, less\forms.less */
+/* line 231, less\forms.less */
 .radio,
 .checkbox {
   position: relative;
@@ -9269,7 +9276,7 @@ input[type="search"] {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 231, less\forms.less */
+/* line 238, less\forms.less */
 .radio label,
 .checkbox label {
   min-height: 23px;
@@ -9278,7 +9285,7 @@ input[type="search"] {
   font-weight: normal;
   cursor: pointer;
 }
-/* line 240, less\forms.less */
+/* line 247, less\forms.less */
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
@@ -9287,12 +9294,12 @@ input[type="search"] {
   margin-left: -20px;
   margin-top: 4px \9;
 }
-/* line 249, less\forms.less */
+/* line 256, less\forms.less */
 .radio + .radio,
 .checkbox + .checkbox {
   margin-top: -5px;
 }
-/* line 255, less\forms.less */
+/* line 262, less\forms.less */
 .radio-inline,
 .checkbox-inline {
   position: relative;
@@ -9303,13 +9310,13 @@ input[type="search"] {
   font-weight: normal;
   cursor: pointer;
 }
-/* line 266, less\forms.less */
+/* line 273, less\forms.less */
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
   margin-left: 10px;
 }
-/* line 278, less\forms.less */
+/* line 285, less\forms.less */
 input[type="radio"][disabled],
 input[type="checkbox"][disabled],
 input[type="radio"].disabled,
@@ -9318,34 +9325,34 @@ fieldset[disabled] input[type="radio"],
 fieldset[disabled] input[type="checkbox"] {
   cursor: not-allowed;
 }
-/* line 288, less\forms.less */
+/* line 295, less\forms.less */
 .radio-inline.disabled,
 .checkbox-inline.disabled,
 fieldset[disabled] .radio-inline,
 fieldset[disabled] .checkbox-inline {
   cursor: not-allowed;
 }
-/* line 299, less\forms.less */
+/* line 306, less\forms.less */
 .radio.disabled label,
 .checkbox.disabled label,
 fieldset[disabled] .radio label,
 fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
-/* line 310, less\forms.less */
+/* line 317, less\forms.less */
 .form-control-static {
   padding-top: 11px;
   padding-bottom: 11px;
   margin-bottom: 0;
   min-height: 39px;
 }
-/* line 318, less\forms.less */
+/* line 325, less\forms.less */
 .form-control-static.input-lg,
 .form-control-static.input-sm {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 333, less\forms.less */
+/* line 340, less\forms.less */
 .input-sm {
   height: 33px;
   padding: 5px 10px;
@@ -9373,7 +9380,7 @@ textarea.input-sm,
 select[multiple].input-sm {
   height: auto;
 }
-/* line 338, less\forms.less */
+/* line 345, less\forms.less */
 .form-group-sm .form-control {
   height: 33px;
   padding: 5px 10px;
@@ -9381,17 +9388,17 @@ select[multiple].input-sm {
   line-height: 1.5;
   border-radius: 20px;
 }
-/* line 345, less\forms.less */
+/* line 352, less\forms.less */
 .form-group-sm select.form-control {
   height: 33px;
   line-height: 33px;
 }
-/* line 349, less\forms.less */
+/* line 356, less\forms.less */
 .form-group-sm textarea.form-control,
 .form-group-sm select[multiple].form-control {
   height: auto;
 }
-/* line 353, less\forms.less */
+/* line 360, less\forms.less */
 .form-group-sm .form-control-static {
   height: 33px;
   min-height: 37px;
@@ -9399,7 +9406,7 @@ select[multiple].input-sm {
   font-size: 14px;
   line-height: 1.5;
 }
-/* line 362, less\forms.less */
+/* line 369, less\forms.less */
 .input-lg {
   height: 59px;
   padding: 15px 30px;
@@ -9427,7 +9434,7 @@ textarea.input-lg,
 select[multiple].input-lg {
   height: auto;
 }
-/* line 367, less\forms.less */
+/* line 374, less\forms.less */
 .form-group-lg .form-control {
   height: 59px;
   padding: 15px 30px;
@@ -9435,17 +9442,17 @@ select[multiple].input-lg {
   line-height: 1.3333333;
   border-radius: 6px;
 }
-/* line 374, less\forms.less */
+/* line 381, less\forms.less */
 .form-group-lg select.form-control {
   height: 59px;
   line-height: 59px;
 }
-/* line 378, less\forms.less */
+/* line 385, less\forms.less */
 .form-group-lg textarea.form-control,
 .form-group-lg select[multiple].form-control {
   height: auto;
 }
-/* line 382, less\forms.less */
+/* line 389, less\forms.less */
 .form-group-lg .form-control-static {
   height: 59px;
   min-height: 43px;
@@ -9453,15 +9460,15 @@ select[multiple].input-lg {
   font-size: 20px;
   line-height: 1.3333333;
 }
-/* line 395, less\forms.less */
+/* line 402, less\forms.less */
 .has-feedback {
   position: relative;
 }
-/* line 400, less\forms.less */
+/* line 407, less\forms.less */
 .has-feedback .form-control {
   padding-right: 56.25px;
 }
-/* line 406, less\forms.less */
+/* line 413, less\forms.less */
 .form-control-feedback {
   position: absolute;
   top: 0;
@@ -9474,7 +9481,7 @@ select[multiple].input-lg {
   text-align: center;
   pointer-events: none;
 }
-/* line 419, less\forms.less */
+/* line 426, less\forms.less */
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
@@ -9482,7 +9489,7 @@ select[multiple].input-lg {
   height: 59px;
   line-height: 59px;
 }
-/* line 427, less\forms.less */
+/* line 434, less\forms.less */
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
@@ -9560,11 +9567,11 @@ select[multiple].input-lg {
 .has-success .form-control-feedback {
   color: #8DC63F;
 }
-/* line 438, less\forms.less */
+/* line 445, less\forms.less */
 .has-success .help-block {
   visibility: hidden;
 }
-/* line 440, less\forms.less */
+/* line 447, less\forms.less */
 .has-success .help-block:before {
   content: "\f00c";
   display: inline-block;
@@ -9577,7 +9584,7 @@ select[multiple].input-lg {
   -moz-osx-font-smoothing: grayscale;
   display: none;
 }
-/* line 453, less\forms.less */
+/* line 460, less\forms.less */
 .has-success .help-block:after {
   content: 'Bravo!';
   font-size: 12px;
@@ -9654,7 +9661,7 @@ select[multiple].input-lg {
 .has-warning .form-control-feedback {
   color: #EDC403;
 }
-/* line 465, less\forms.less */
+/* line 472, less\forms.less */
 .has-warning .help-block:before {
   content: "\f071";
   display: inline-block;
@@ -9736,15 +9743,15 @@ select[multiple].input-lg {
 .has-error .form-control-feedback {
   color: #E64747;
 }
-/* line 486, less\forms.less */
+/* line 493, less\forms.less */
 .has-feedback label ~ .form-control-feedback {
   top: 28px;
 }
-/* line 489, less\forms.less */
+/* line 496, less\forms.less */
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0;
 }
-/* line 499, less\forms.less */
+/* line 506, less\forms.less */
 .help-block {
   display: block;
   text-align: right;
@@ -9754,48 +9761,48 @@ select[multiple].input-lg {
   padding: 3px 20px;
   color: #333333;
 }
-/* line 508, less\forms.less */
+/* line 515, less\forms.less */
 .help-block ul {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 529, less\forms.less */
+  /* line 536, less\forms.less */
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 536, less\forms.less */
+  /* line 543, less\forms.less */
   .form-inline .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  /* line 543, less\forms.less */
+  /* line 550, less\forms.less */
   .form-inline .form-control-static {
     display: inline-block;
   }
-  /* line 547, less\forms.less */
+  /* line 554, less\forms.less */
   .form-inline .input-group {
     display: inline-table;
     vertical-align: middle;
   }
-  /* line 551, less\forms.less */
+  /* line 558, less\forms.less */
   .form-inline .input-group .input-group-addon,
   .form-inline .input-group .input-group-btn,
   .form-inline .input-group .form-control {
     width: auto;
   }
-  /* line 559, less\forms.less */
+  /* line 566, less\forms.less */
   .form-inline .input-group > .form-control {
     width: 100%;
   }
-  /* line 563, less\forms.less */
+  /* line 570, less\forms.less */
   .form-inline .control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 570, less\forms.less */
+  /* line 577, less\forms.less */
   .form-inline .radio,
   .form-inline .checkbox {
     display: inline-block;
@@ -9803,23 +9810,23 @@ select[multiple].input-lg {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 577, less\forms.less */
+  /* line 584, less\forms.less */
   .form-inline .radio label,
   .form-inline .checkbox label {
     padding-left: 0;
   }
-  /* line 582, less\forms.less */
+  /* line 589, less\forms.less */
   .form-inline .radio input[type="radio"],
   .form-inline .checkbox input[type="checkbox"] {
     position: relative;
     margin-left: 0;
   }
-  /* line 589, less\forms.less */
+  /* line 596, less\forms.less */
   .form-inline .has-feedback .form-control-feedback {
     top: 0;
   }
 }
-/* line 605, less\forms.less */
+/* line 612, less\forms.less */
 .form-horizontal .radio,
 .form-horizontal .checkbox,
 .form-horizontal .radio-inline,
@@ -9828,51 +9835,51 @@ select[multiple].input-lg {
   margin-bottom: 0;
   padding-top: 11px;
 }
-/* line 615, less\forms.less */
+/* line 622, less\forms.less */
 .form-horizontal .radio,
 .form-horizontal .checkbox {
   min-height: 34px;
 }
-/* line 621, less\forms.less */
+/* line 628, less\forms.less */
 .form-horizontal .form-group {
   margin-left: -10px;
   margin-right: -10px;
 }
 @media (min-width: 768px) {
-  /* line 628, less\forms.less */
+  /* line 635, less\forms.less */
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
     padding-top: 11px;
   }
-  /* line 634, less\forms.less */
+  /* line 641, less\forms.less */
   .form-horizontal.form-left .control-label {
     text-align: left;
   }
 }
-/* line 643, less\forms.less */
+/* line 650, less\forms.less */
 .form-horizontal .has-feedback .form-control-feedback {
   right: 10px;
 }
 @media (min-width: 768px) {
-  /* line 653, less\forms.less */
+  /* line 660, less\forms.less */
   .form-horizontal .form-group-lg .control-label {
     padding-top: 16px;
     font-size: 20px;
   }
 }
 @media (min-width: 768px) {
-  /* line 661, less\forms.less */
+  /* line 668, less\forms.less */
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
     font-size: 14px;
   }
 }
-/* line 669, less\forms.less */
+/* line 676, less\forms.less */
 .fieldset-content {
   margin-bottom: 15px;
 }
-/* line 673, less\forms.less */
+/* line 680, less\forms.less */
 .checkbox {
   position: relative;
   margin: 0;
@@ -9880,23 +9887,23 @@ select[multiple].input-lg {
   font-weight: normal;
   cursor: pointer;
 }
-/* line 681, less\forms.less */
+/* line 688, less\forms.less */
 .widget--sidebar .checkbox {
   font-size: 10px;
 }
-/* line 685, less\forms.less */
+/* line 692, less\forms.less */
 .checkbox input[type="checkbox"],
 .checkbox input[type="radio"] {
   display: none;
 }
-/* line 690, less\forms.less */
+/* line 697, less\forms.less */
 .checkbox input[type="checkbox"]:checked + .checkbox-indicator {
   background-color: #164194;
   border-color: #164194;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
   font-weight: 900;
 }
-/* line 697, less\forms.less */
+/* line 704, less\forms.less */
 .checkbox .checkbox-indicator {
   content: "";
   width: 15px;
@@ -9915,30 +9922,30 @@ select[multiple].input-lg {
   background-position: center center;
   background-size: 60% 60%;
 }
-/* line 715, less\forms.less */
+/* line 722, less\forms.less */
 .checkbox .checkbox-indicator:hover,
 .checkbox .checkbox-indicator:focus {
   background-color: #F0F0F0;
 }
-/* line 722, less\forms.less */
+/* line 729, less\forms.less */
 .checkbox.checkbox-inline {
   padding-left: 24px;
 }
-/* line 726, less\forms.less */
+/* line 733, less\forms.less */
 .checkbox.checkbox-inline-right {
   padding-right: 24px;
 }
-/* line 729, less\forms.less */
+/* line 736, less\forms.less */
 .checkbox.checkbox-inline-right .checkbox-indicator {
   left: inherit;
   right: 0;
 }
-/* line 735, less\forms.less */
+/* line 742, less\forms.less */
 .checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
   background-color: #E4E7ED;
   border-color: #DDD;
 }
-/* line 740, less\forms.less */
+/* line 747, less\forms.less */
 .checkbox-table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9948,30 +9955,30 @@ select[multiple].input-lg {
   margin-left: 1px;
   margin-bottom: 1px;
 }
-/* line 750, less\forms.less */
+/* line 757, less\forms.less */
 .checkbox-table .checkbox--cell {
   margin: 0 0 -1px -1px;
 }
 @media (max-width: 767px) {
-  /* line 753, less\forms.less */
+  /* line 760, less\forms.less */
   .checkbox-table .checkbox--cell {
     margin: 0 0 1px 1px;
   }
 }
-/* line 758, less\forms.less */
+/* line 765, less\forms.less */
 .checkbox--cell {
   width: 40px;
   height: 40px;
   position: relative;
 }
-/* line 764, less\forms.less */
+/* line 771, less\forms.less */
 .checkbox--cell input[type="checkbox"]:checked + .checkbox-indicator {
   background-color: #164194;
   background-image: none;
   border-color: #F0F0F0;
   color: #FFF;
 }
-/* line 771, less\forms.less */
+/* line 778, less\forms.less */
 .checkbox--cell .checkbox-indicator {
   content: "";
   width: 40px;
@@ -9991,7 +9998,7 @@ select[multiple].input-lg {
   text-align: center;
   line-height: 38px;
 }
-/* line 791, less\forms.less */
+/* line 798, less\forms.less */
 .radio {
   position: relative;
   margin: 0;
@@ -9999,15 +10006,15 @@ select[multiple].input-lg {
   text-transform: none;
   font-size: 15px;
 }
-/* line 799, less\forms.less */
+/* line 806, less\forms.less */
 .radio input[type="radio"] {
   display: none;
 }
-/* line 803, less\forms.less */
+/* line 810, less\forms.less */
 .radio input[type="radio"]:checked + .radio-indicator {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23164194'/%3E%3C/svg%3E");
 }
-/* line 807, less\forms.less */
+/* line 814, less\forms.less */
 .radio .radio-indicator {
   content: "";
   width: 16px;
@@ -10025,51 +10032,51 @@ select[multiple].input-lg {
   background-position: center center;
   background-size: 14px 14px;
 }
-/* line 827, less\forms.less */
+/* line 834, less\forms.less */
 .radio.radio-inline {
   line-height: 1;
   padding-left: 24px;
   color: inherit !important;
 }
-/* line 833, less\forms.less */
+/* line 840, less\forms.less */
 .radio input[type="radio"]:disabled + .radio-indicator {
   background-color: #F0F0F0;
   border-color: #F0F0F0;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%239a9da2'/%3E%3C/svg%3E");
 }
-/* line 839, less\forms.less */
+/* line 846, less\forms.less */
 .radio--word {
   position: relative;
   padding: 0 !important;
 }
-/* line 844, less\forms.less */
+/* line 851, less\forms.less */
 .radio--word + .radio--word {
   margin-left: 20px;
 }
-/* line 848, less\forms.less */
+/* line 855, less\forms.less */
 .radio--word input[type="radio"]:checked + .radio-label {
   color: #31404B;
 }
-/* line 852, less\forms.less */
+/* line 859, less\forms.less */
 .radio--word .radio-label {
   color: #BFC2C4;
   font-weight: 700;
 }
-/* line 857, less\forms.less */
+/* line 864, less\forms.less */
 .radio--word-lg {
   font-size: 15px;
   line-height: 1.2em;
 }
-/* line 862, less\forms.less */
+/* line 869, less\forms.less */
 .input-inline {
   display: inline-block !important;
   vertical-align: middle !important;
 }
-/* line 867, less\forms.less */
+/* line 874, less\forms.less */
 .input-xs {
   width: 50px !important;
 }
-/* line 871, less\forms.less */
+/* line 878, less\forms.less */
 .line-height-input {
   line-height: 35px;
 }
@@ -12300,43 +12307,43 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 @media (min-width: 768px) {
-  /* line 529, less\forms.less */
+  /* line 536, less\forms.less */
   .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 536, less\forms.less */
+  /* line 543, less\forms.less */
   .navbar-form .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  /* line 543, less\forms.less */
+  /* line 550, less\forms.less */
   .navbar-form .form-control-static {
     display: inline-block;
   }
-  /* line 547, less\forms.less */
+  /* line 554, less\forms.less */
   .navbar-form .input-group {
     display: inline-table;
     vertical-align: middle;
   }
-  /* line 551, less\forms.less */
+  /* line 558, less\forms.less */
   .navbar-form .input-group .input-group-addon,
   .navbar-form .input-group .input-group-btn,
   .navbar-form .input-group .form-control {
     width: auto;
   }
-  /* line 559, less\forms.less */
+  /* line 566, less\forms.less */
   .navbar-form .input-group > .form-control {
     width: 100%;
   }
-  /* line 563, less\forms.less */
+  /* line 570, less\forms.less */
   .navbar-form .control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 570, less\forms.less */
+  /* line 577, less\forms.less */
   .navbar-form .radio,
   .navbar-form .checkbox {
     display: inline-block;
@@ -12344,18 +12351,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  /* line 577, less\forms.less */
+  /* line 584, less\forms.less */
   .navbar-form .radio label,
   .navbar-form .checkbox label {
     padding-left: 0;
   }
-  /* line 582, less\forms.less */
+  /* line 589, less\forms.less */
   .navbar-form .radio input[type="radio"],
   .navbar-form .checkbox input[type="checkbox"] {
     position: relative;
     margin-left: 0;
   }
-  /* line 589, less\forms.less */
+  /* line 596, less\forms.less */
   .navbar-form .has-feedback .form-control-feedback {
     top: 0;
   }
