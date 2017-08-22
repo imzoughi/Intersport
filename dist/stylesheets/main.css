@@ -12900,12 +12900,12 @@ th {
 /* line 97, less\tables.less */
 .table-custom > thead > tr > th {
   background-color: #164194;
-  font-size: 10px;
+  font-size: 11px;
+  padding: 5px;
   color: #FFFFFF;
   vertical-align: bottom;
   border-bottom: 2px solid #e5e5e5;
   font-weight: 500;
-  text-transform: uppercase;
 }
 /* line 111, less\tables.less */
 .table-custom > caption + thead > tr:first-child > th,
