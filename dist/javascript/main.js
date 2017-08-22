@@ -1,8 +1,21 @@
 $(function() {
-    bootstrapComponents.init(), formValidator.init(), passwordShowToggle.init();
+    responsiveBlock.init(), bootstrapComponents.init(), formValidator.init(), passwordShowToggle.init();
 });
 
-var bootstrapComponents = function() {
+var responsiveBlock = function() {
+    function _init() {
+        function viewMobile() {
+            $("body").width() < screenTabletteMax ? $("#navbar-lang_id").insertBefore(".navbar-brand") : $("#navbar-lang_id").appendTo(".navbar-nav > li:nth-child(3)");
+        }
+        var screenTabletteMax = 992;
+        viewMobile(), $(window).resize(function() {
+            viewMobile();
+        });
+    }
+    return {
+        init: _init
+    };
+}(), bootstrapComponents = function() {
     function _init() {
         $('[data-toggle="popover"]').popover(), $(".selectpicker").selectpicker(), $('[data-table="data-table"]').dataTable({
             responsive: !0,

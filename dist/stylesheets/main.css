@@ -12123,23 +12123,36 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 23px;
   height: 55px;
 }
-/* line 171, less\navbar.less */
+@media (max-width: 767px) {
+  /* line 170, less\navbar.less */
+  .navbar-brand {
+    padding: 20px 10px;
+  }
+}
+/* line 174, less\navbar.less */
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
 }
-/* line 176, less\navbar.less */
+/* line 179, less\navbar.less */
 .navbar-brand > img {
   display: block;
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  /* line 183, less\navbar.less */
+  .navbar-brand > img {
+    width: 180px;
+  }
 }
 @media (min-width: 992px) {
-  /* line 181, less\navbar.less */
+  /* line 189, less\navbar.less */
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -10px;
   }
 }
-/* line 194, less\navbar.less */
+/* line 202, less\navbar.less */
 .navbar-toggle {
   position: relative;
   float: right;
@@ -12152,32 +12165,32 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border: 1px solid transparent;
   border-radius: 40px;
 }
-/* line 207, less\navbar.less */
+/* line 215, less\navbar.less */
 .navbar-toggle:focus {
   outline: 0;
 }
-/* line 212, less\navbar.less */
+/* line 220, less\navbar.less */
 .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
   height: 2px;
   border-radius: 1px;
 }
-/* line 218, less\navbar.less */
+/* line 226, less\navbar.less */
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
 @media (min-width: 992px) {
-  /* line 222, less\navbar.less */
+  /* line 230, less\navbar.less */
   .navbar-toggle {
     display: none;
   }
 }
-/* line 233, less\navbar.less */
+/* line 241, less\navbar.less */
 .navbar-nav {
   margin: 8px -10px;
 }
-/* line 236, less\navbar.less */
+/* line 244, less\navbar.less */
 .navbar-nav > li > a {
   font-family: 'Din', Tahoma, Helvetica, sans-serif;
   font-size: 14px;
@@ -12185,14 +12198,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 10px;
   line-height: 23px;
 }
-/* line 242, less\navbar.less */
+/* line 250, less\navbar.less */
 .navbar-nav > li > a > i {
   font-size: 23px;
   margin-right: 10px;
   vertical-align: middle;
 }
 @media (max-width: 991px) {
-  /* line 251, less\navbar.less */
+  /* line 259, less\navbar.less */
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -12202,38 +12215,38 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border: 0;
     box-shadow: none;
   }
-  /* line 259, less\navbar.less */
+  /* line 267, less\navbar.less */
   .navbar-nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
-  /* line 263, less\navbar.less */
+  /* line 271, less\navbar.less */
   .navbar-nav .open .dropdown-menu > li > a {
     line-height: 23px;
   }
-  /* line 265, less\navbar.less */
+  /* line 273, less\navbar.less */
   .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-nav .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
 }
 @media (min-width: 992px) {
-  /* line 274, less\navbar.less */
+  /* line 282, less\navbar.less */
   .navbar-nav {
     float: left;
     margin: 0;
   }
-  /* line 278, less\navbar.less */
+  /* line 286, less\navbar.less */
   .navbar-nav > li {
     float: left;
   }
-  /* line 280, less\navbar.less */
+  /* line 288, less\navbar.less */
   .navbar-nav > li > a {
     padding-top: 16px;
     padding-bottom: 16px;
   }
 }
-/* line 294, less\navbar.less */
+/* line 302, less\navbar.less */
 .navbar-form {
   margin-left: -10px;
   margin-right: -10px;
@@ -12368,17 +12381,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 @media (max-width: 991px) {
-  /* line 307, less\navbar.less */
+  /* line 315, less\navbar.less */
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
-  /* line 310, less\navbar.less */
+  /* line 318, less\navbar.less */
   .navbar-form .form-group:last-child {
     margin-bottom: 0;
   }
 }
 @media (min-width: 992px) {
-  /* line 320, less\navbar.less */
+  /* line 328, less\navbar.less */
   .navbar-form {
     width: auto;
     border: 0;
@@ -12390,13 +12403,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     box-shadow: none;
   }
 }
-/* line 335, less\navbar.less */
+/* line 343, less\navbar.less */
 .navbar-nav > li > .dropdown-menu {
   margin-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-/* line 340, less\navbar.less */
+/* line 348, less\navbar.less */
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   margin-bottom: 0;
   border-top-right-radius: 40px;
@@ -12404,28 +12417,28 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-/* line 351, less\navbar.less */
+/* line 359, less\navbar.less */
 .navbar-btn {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 354, less\navbar.less */
+/* line 362, less\navbar.less */
 .navbar-btn.btn-sm {
   margin-top: 11px;
   margin-bottom: 11px;
 }
-/* line 357, less\navbar.less */
+/* line 365, less\navbar.less */
 .navbar-btn.btn-xs {
   margin-top: 16.5px;
   margin-bottom: 16.5px;
 }
-/* line 367, less\navbar.less */
+/* line 375, less\navbar.less */
 .navbar-text {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 @media (min-width: 992px) {
-  /* line 370, less\navbar.less */
+  /* line 378, less\navbar.less */
   .navbar-text {
     float: left;
     margin-left: 10px;
@@ -12433,82 +12446,82 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 @media (min-width: 992px) {
-  /* line 387, less\navbar.less */
+  /* line 395, less\navbar.less */
   .navbar-left {
     float: left !important;
   }
-  /* line 388, less\navbar.less */
+  /* line 396, less\navbar.less */
   .navbar-right {
     float: right !important;
     margin-right: -10px;
   }
-  /* line 392, less\navbar.less */
+  /* line 400, less\navbar.less */
   .navbar-right ~ .navbar-right {
     margin-right: 0;
   }
 }
-/* line 403, less\navbar.less */
+/* line 411, less\navbar.less */
 .navbar-default {
   background-color: #FFF;
   border-color: #F2F2F2;
 }
-/* line 407, less\navbar.less */
+/* line 415, less\navbar.less */
 .navbar-default .navbar-brand {
   color: #164194;
 }
-/* line 409, less\navbar.less */
+/* line 417, less\navbar.less */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #0f2d68;
   background-color: transparent;
 }
-/* line 416, less\navbar.less */
+/* line 424, less\navbar.less */
 .navbar-default .navbar-text {
   color: #777;
 }
-/* line 421, less\navbar.less */
+/* line 429, less\navbar.less */
 .navbar-default .navbar-nav > li > a {
   color: #164194;
 }
-/* line 424, less\navbar.less */
+/* line 432, less\navbar.less */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #123579;
   background-color: transparent;
 }
-/* line 431, less\navbar.less */
+/* line 439, less\navbar.less */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #123579;
   background-color: #FFF;
 }
-/* line 439, less\navbar.less */
+/* line 447, less\navbar.less */
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
   color: #CCC;
   background-color: transparent;
 }
-/* line 448, less\navbar.less */
+/* line 456, less\navbar.less */
 .navbar-default .navbar-toggle {
   border-color: transparent;
 }
-/* line 450, less\navbar.less */
+/* line 458, less\navbar.less */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: transparent;
 }
-/* line 454, less\navbar.less */
+/* line 462, less\navbar.less */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #164194;
 }
-/* line 459, less\navbar.less */
+/* line 467, less\navbar.less */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #F2F2F2;
 }
-/* line 468, less\navbar.less */
+/* line 476, less\navbar.less */
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -12516,24 +12529,24 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #123579;
 }
 @media (max-width: 991px) {
-  /* line 479, less\navbar.less */
+  /* line 487, less\navbar.less */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #164194;
   }
-  /* line 481, less\navbar.less */
+  /* line 489, less\navbar.less */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #123579;
     background-color: transparent;
   }
-  /* line 488, less\navbar.less */
+  /* line 496, less\navbar.less */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #123579;
     background-color: #FFF;
   }
-  /* line 496, less\navbar.less */
+  /* line 504, less\navbar.less */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -12541,92 +12554,92 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-color: transparent;
   }
 }
-/* line 512, less\navbar.less */
+/* line 520, less\navbar.less */
 .navbar-default .navbar-link {
   color: #164194;
 }
-/* line 514, less\navbar.less */
+/* line 522, less\navbar.less */
 .navbar-default .navbar-link:hover {
   color: #123579;
 }
-/* line 519, less\navbar.less */
+/* line 527, less\navbar.less */
 .navbar-default .btn-link {
   color: #164194;
 }
-/* line 521, less\navbar.less */
+/* line 529, less\navbar.less */
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
   color: #123579;
 }
-/* line 527, less\navbar.less */
+/* line 535, less\navbar.less */
 .navbar-default .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-default .btn-link:hover,
 .navbar-default .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-default .btn-link:focus {
   color: #CCC;
 }
-/* line 537, less\navbar.less */
+/* line 545, less\navbar.less */
 .navbar-inverse {
   background-color: #222;
   border-color: #080808;
 }
-/* line 541, less\navbar.less */
+/* line 549, less\navbar.less */
 .navbar-inverse .navbar-brand {
   color: #ffffff;
 }
-/* line 543, less\navbar.less */
+/* line 551, less\navbar.less */
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
   color: #FFF;
   background-color: transparent;
 }
-/* line 550, less\navbar.less */
+/* line 558, less\navbar.less */
 .navbar-inverse .navbar-text {
   color: #ffffff;
 }
-/* line 555, less\navbar.less */
+/* line 563, less\navbar.less */
 .navbar-inverse .navbar-nav > li > a {
   color: #ffffff;
 }
-/* line 558, less\navbar.less */
+/* line 566, less\navbar.less */
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #FFF;
   background-color: transparent;
 }
-/* line 565, less\navbar.less */
+/* line 573, less\navbar.less */
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #FFF;
   background-color: #080808;
 }
-/* line 573, less\navbar.less */
+/* line 581, less\navbar.less */
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
 .navbar-inverse .navbar-nav > .disabled > a:focus {
   color: #444;
   background-color: transparent;
 }
-/* line 583, less\navbar.less */
+/* line 591, less\navbar.less */
 .navbar-inverse .navbar-toggle {
   border-color: #333;
 }
-/* line 585, less\navbar.less */
+/* line 593, less\navbar.less */
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
   background-color: #333;
 }
-/* line 589, less\navbar.less */
+/* line 597, less\navbar.less */
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #FFF;
 }
-/* line 594, less\navbar.less */
+/* line 602, less\navbar.less */
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: #101010;
 }
-/* line 602, less\navbar.less */
+/* line 610, less\navbar.less */
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
@@ -12634,32 +12647,32 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #FFF;
 }
 @media (max-width: 991px) {
-  /* line 613, less\navbar.less */
+  /* line 621, less\navbar.less */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #080808;
   }
-  /* line 616, less\navbar.less */
+  /* line 624, less\navbar.less */
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
     background-color: #080808;
   }
-  /* line 619, less\navbar.less */
+  /* line 627, less\navbar.less */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #ffffff;
   }
-  /* line 621, less\navbar.less */
+  /* line 629, less\navbar.less */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #FFF;
     background-color: transparent;
   }
-  /* line 628, less\navbar.less */
+  /* line 636, less\navbar.less */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #FFF;
     background-color: #080808;
   }
-  /* line 636, less\navbar.less */
+  /* line 644, less\navbar.less */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -12667,24 +12680,24 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     background-color: transparent;
   }
 }
-/* line 647, less\navbar.less */
+/* line 655, less\navbar.less */
 .navbar-inverse .navbar-link {
   color: #ffffff;
 }
-/* line 649, less\navbar.less */
+/* line 657, less\navbar.less */
 .navbar-inverse .navbar-link:hover {
   color: #FFF;
 }
-/* line 654, less\navbar.less */
+/* line 662, less\navbar.less */
 .navbar-inverse .btn-link {
   color: #ffffff;
 }
-/* line 656, less\navbar.less */
+/* line 664, less\navbar.less */
 .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link:focus {
   color: #FFF;
 }
-/* line 662, less\navbar.less */
+/* line 670, less\navbar.less */
 .navbar-inverse .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link[disabled]:focus,
@@ -14876,6 +14889,17 @@ address {
   display: inline-block;
   flex-grow: 1;
   margin: 0;
+}
+/* line 18, less\layout\header.less */
+.navbar-lang {
+  float: right;
+  padding: 15px 0 15px 15px;
+}
+@media (max-width: 767px) {
+  /* line 22, less\layout\header.less */
+  .navbar-lang {
+    padding: 14px;
+  }
 }
 /* line 1, less\3_sections.less */
 .section-content {

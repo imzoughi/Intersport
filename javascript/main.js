@@ -10,6 +10,7 @@
  *  INIT
  \* ========================================== */
 $(function () {
+    responsiveBlock.init();
     bootstrapComponents.init();
     formValidator.init();
     passwordShowToggle.init();
@@ -18,11 +19,38 @@ $(function () {
  *  MODULES
  \* ========================================== */
 
+/* =responsiveBlock */
+var responsiveBlock = function () {
+    function _init() {
+        var screenMobileMax = 768;
+        var screenTabletteMax = 992;
+
+        function viewMobile() {
+            if ($("body").width() < screenTabletteMax) {
+                $('#navbar-lang_id').insertBefore('.navbar-brand');
+            } else {
+                $('#navbar-lang_id').appendTo('.navbar-nav > li:nth-child(3)');
+            }
+        }
+
+        viewMobile();
+
+        $(window).resize(function() {
+            viewMobile();
+        });
+
+    }
+
+    return {
+        init: _init
+    };
+}();
+
 /* =bootstrapComponents */
 var bootstrapComponents = function () {
     function _init() {
         $('[data-toggle="popover"]').popover();
-        
+
         $('.selectpicker').selectpicker();
 
         $('[data-table="data-table"]').dataTable({
