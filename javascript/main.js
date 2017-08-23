@@ -77,6 +77,8 @@ var bootstrapComponents = function () {
 /* =formValidator */
 var formValidator = function () {
     function _init() {
+
+        // Form validator init
         $('[data-toggle="validator"]').validator({
             feedback: {
                 success: 'is-check',
@@ -85,6 +87,29 @@ var formValidator = function () {
             focus: false,
             disable: false
         });
+
+
+        // Autorisation Email et Mobile
+        function validationInput(inputFiled, validField) {
+            $(inputFiled).on('keyup',function () {
+                if($(this).val() !== ''){
+                    //console.log('pas vide');
+                    $(validField).prop('checked',true);
+                } else {
+                    //console.log('vide');
+                    $(validField).prop('checked',false);
+                }
+            });
+        }
+
+        var inputEmail = $('#user-email_id');
+        var inputEmailValid = $('#user-autorisations-email-0_id');
+        var inputMobile = $('#user-tel-mobile_id');
+        var inputMobileValid = $('#user-autorisations-mobile-0_id');
+
+        validationInput(inputEmail,inputEmailValid);
+        validationInput(inputMobile,inputMobileValid);
+
     }
 
     return {

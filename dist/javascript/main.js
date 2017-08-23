@@ -31,6 +31,11 @@ var responsiveBlock = function() {
     };
 }(), formValidator = function() {
     function _init() {
+        function validationInput(inputFiled, validField) {
+            $(inputFiled).on("keyup", function() {
+                "" !== $(this).val() ? $(validField).prop("checked", !0) : $(validField).prop("checked", !1);
+            });
+        }
         $('[data-toggle="validator"]').validator({
             feedback: {
                 success: "is-check",
@@ -39,6 +44,8 @@ var responsiveBlock = function() {
             focus: !1,
             disable: !1
         });
+        var inputEmail = $("#user-email_id"), inputEmailValid = $("#user-autorisations-email-0_id"), inputMobile = $("#user-tel-mobile_id"), inputMobileValid = $("#user-autorisations-mobile-0_id");
+        validationInput(inputEmail, inputEmailValid), validationInput(inputMobile, inputMobileValid);
     }
     return {
         init: _init

@@ -33,8 +33,8 @@ label {
   font-weight    : 400;
   text-transform : uppercase;
 
-  @media (max-width: @screen-xs-max) {
-    font-size: 16px;
+  @media (max-width : @screen-xs-max) {
+    font-size : 16px;
     }
   }
 
@@ -112,9 +112,9 @@ output {
 // input[type="color"]
 
 .required-star {
-  color: @brand-primary;
-  font-size: 80%;
-  font-weight: 500;
+  color       : @brand-primary;
+  font-size   : 80%;
+  font-weight : 500;
   }
 
 .form-control {
@@ -180,9 +180,9 @@ input[type="search"] {
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none !important;
-  margin: 0 !important;
-  -moz-appearance:textfield !important;
+  -webkit-appearance : none !important;
+  margin             : 0 !important;
+  -moz-appearance    : textfield !important;
   }
 
 // Special styles for iOS temporal inputs
@@ -674,7 +674,7 @@ input[type="checkbox"] {
   }
 
 .fieldset-content {
-  margin-bottom: 15px;
+  margin-bottom : 15px;
   }
 
 .checkbox {
@@ -796,11 +796,11 @@ input[type="checkbox"] {
   }
 
 .radio {
-  position : relative;
-  margin   : 0;
-  padding-left: 24px;
-  text-transform: none;
-  font-size: 15px;
+  position       : relative;
+  margin         : 0;
+  padding-left   : 24px;
+  text-transform : none;
+  font-size      : 15px;
   }
 
 .radio input[type="radio"] {
@@ -822,7 +822,8 @@ input[type="checkbox"] {
   display             : block;
   position            : absolute;
   left                : 0;
-  top                 : 0px;
+  top                 : 50%;
+  .translate(0, -50%);
   -webkit-transition  : all 0.2s ease;
   transition          : all 0.2s ease;
   background-repeat   : no-repeat;
@@ -832,9 +833,9 @@ input[type="checkbox"] {
   }
 
 .radio.radio-inline {
-  line-height: 1;
-  padding-left : 24px;
-  color : inherit !important;
+  line-height  : 1;
+  padding : 15px 0 15px 24px;
+  color        : inherit !important;
   }
 
 .radio input[type="radio"]:disabled + .radio-indicator {
@@ -864,6 +865,10 @@ input[type="checkbox"] {
 .radio--word-lg {
   font-size   : 15px;
   line-height : 1.2em;
+  }
+
+.label-inline {
+  padding-top: 12px;
   }
 
 .input-inline {

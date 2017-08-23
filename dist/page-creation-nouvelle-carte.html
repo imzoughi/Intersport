@@ -115,7 +115,7 @@
                                     <!-- Text input-->
                                     <div class="form-group clearfix has-feedback">
                                         <div class="row">
-                                            <label class="col-md-4 col-sm-4 col-xs-4" for="user-civility-1">Civilité
+                                            <label class="col-md-4 col-sm-4 col-xs-4 label-inline" for="user-civility-1">Civilité
                                                 <sup class="required-star">*</sup></label>
                                             <div class="col-md-8 col-sm-8 col-xs-8">
                                                 <label class="radio radio-inline">
@@ -365,7 +365,26 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+                                <div class="col-md-5 col-sm-6 col-xs-12">
+                                    <!-- Text input-->
+                                    <div class="form-group clearfix has-feedback">
+                                        <label for="user-autorisations-email-0_id">Souhaite recevoir</label>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <label class="radio radio-inline">
+                                                    <input type="radio" name="user-autorisations-email" id="user-autorisations-email-0_id" value="Oui"> Oui
+                                                    <span class="radio-indicator"></span> </label>
+                                                <label class="radio radio-inline">
+                                                    <input type="radio" name="user-autorisations-email" id="user-autorisations-email-1_id" value="Non"> Non
+                                                    <span class="radio-indicator"></span> </label>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5 col-sm-6 col-xs-12">
                                     <!-- Text input-->
                                     <div class="form-group clearfix has-feedback">
                                         <label for="user-tel-mobile_id">Tél mobile</label>
@@ -378,29 +397,46 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="row">
                                 <div class="col-md-5 col-sm-6 col-xs-12">
                                     <!-- Text input-->
                                     <div class="form-group clearfix has-feedback">
-                                        <label for="user-autorisations-1">Autorisations
-                                            <sup class="required-star">*</sup></label>
+                                        <label class="not-visible" for="user-autorisations-mobile-0_id">Souhaite recevoir</label>
                                         <div class="row">
                                             <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <label class="radio radio-inline">
-                                                    <input type="radio" name="user-autorisations" id="user-autorisations-1" value="E-mail" checked> E-MAIL
+                                                    <input type="radio" name="user-autorisations-mobile" id="user-autorisations-mobile-0_id" value="Oui"> Oui
                                                     <span class="radio-indicator"></span> </label>
                                                 <label class="radio radio-inline">
-                                                    <input type="radio" name="user-autorisations" id="user-autorisations-2" value="Mobile" checked> MOBILE
+                                                    <input type="radio" name="user-autorisations-mobile" id="user-autorisations-mobile-1_id" value="Non"> Non
                                                     <span class="radio-indicator"></span> </label>
-                                                <button type="button" class="info-bull-link pull-right" data-toggle="popover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="" title=""></button>
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!--<div class="row">-->
+                                <!--<div class="col-md-5 col-sm-6 col-xs-12">-->
+                                    <!--&lt;!&ndash; Text input&ndash;&gt;-->
+                                    <!--<div class="form-group clearfix has-feedback">-->
+                                        <!--<label for="user-autorisations-1">Autorisations-->
+                                            <!--<sup class="required-star">*</sup></label>-->
+                                        <!--<div class="row">-->
+                                            <!--<div class="col-md-12 col-sm-12 col-xs-12">-->
+                                                <!--<label class="radio radio-inline">-->
+                                                    <!--<input type="radio" name="user-autorisations" id="user-autorisations-1" value="E-mail" checked> E-MAIL-->
+                                                    <!--<span class="radio-indicator"></span> </label>-->
+                                                <!--<label class="radio radio-inline">-->
+                                                    <!--<input type="radio" name="user-autorisations" id="user-autorisations-2" value="Mobile" checked> MOBILE-->
+                                                    <!--<span class="radio-indicator"></span> </label>-->
+                                                <!--<button type="button" class="info-bull-link pull-right" data-toggle="popover" data-placement="top" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="" title=""></button>-->
+                                                <!--<div class="help-block with-errors"></div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
 
                         </fieldset>
                         <!--/.fieldset-content-->
