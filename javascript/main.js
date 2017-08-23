@@ -35,7 +35,7 @@ var responsiveBlock = function () {
 
         viewMobile();
 
-        $(window).resize(function() {
+        $(window).resize(function () {
             viewMobile();
         });
 
@@ -54,12 +54,37 @@ var bootstrapComponents = function () {
         $('.selectpicker').selectpicker();
 
         $('[data-table="data-table"]').dataTable({
+            language: {
+                processing: "Traitement en cours...",
+                search: "Rechercher&nbsp;:",
+                lengthMenu: "Afficher _MENU_ &eacute;l&eacute;ments",
+                info: "Affichage de l'&eacute;lement _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+                infoEmpty: "Affichage de l'&eacute;lement 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+                infoFiltered: "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+                infoPostFix: "",
+                loadingRecords: "Chargement en cours...",
+                zeroRecords: "Aucun &eacute;l&eacute;ment &agrave; afficher",
+                emptyTable: "Aucune donnée disponible dans le tableau",
+                paginate: {
+                    first: "Premier",
+                    previous: "Pr&eacute;c&eacute;dent",
+                    next: "Suivant",
+                    last: "Dernier"
+                },
+                aria: {
+                    sortAscending: ": activer pour trier la colonne par ordre croissant",
+                    sortDescending: ": activer pour trier la colonne par ordre décroissant"
+                }
+            },
             responsive: true,
             autoWidth: true,
             searching: false,
-            paging:   false,
+            paging:   true,
+            lengthMenu: [ [10, -1], [10, "Tout"] ],
+            pageLength: 10,
+            lengthChange: false,
             ordering: true,
-            info:     false
+            info: false
         });
 
         // $('[data-target="#modal-saisie-ticket"]').on('click',function (e) {
@@ -91,13 +116,13 @@ var formValidator = function () {
 
         // Autorisation Email et Mobile
         function validationInput(inputFiled, validField) {
-            $(inputFiled).on('keyup',function () {
-                if($(this).val() !== ''){
+            $(inputFiled).on('keyup', function () {
+                if ($(this).val() !== '') {
                     //console.log('pas vide');
-                    $(validField).prop('checked',true);
+                    $(validField).prop('checked', true);
                 } else {
                     //console.log('vide');
-                    $(validField).prop('checked',false);
+                    $(validField).prop('checked', false);
                 }
             });
         }
@@ -107,8 +132,8 @@ var formValidator = function () {
         var inputMobile = $('#user-tel-mobile_id');
         var inputMobileValid = $('#user-autorisations-mobile-0_id');
 
-        validationInput(inputEmail,inputEmailValid);
-        validationInput(inputMobile,inputMobileValid);
+        validationInput(inputEmail, inputEmailValid);
+        validationInput(inputMobile, inputMobileValid);
 
     }
 
